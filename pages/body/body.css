@@ -43,6 +43,10 @@
   color: var(--purple);
 }
 
+.body_selection {
+  color: var(--purple);
+}
+
 .body_type_active:hover {
   cursor: default;
 }

@@ -16,9 +16,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
   width: 100%;
   background-color: var(--light-gray);
+}
+
+.portfolio__item:last-child {
+  padding-bottom: 25px;
 }
 
 .portfolio__title-cube {
@@ -42,7 +45,11 @@
   flex-direction: row;
   align-items: center;
   width: 568px;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.portfolio__title-container:first-child {
+    margin: 0 0 10px 0; 
 }
 
 .portfolio__container {
@@ -85,6 +92,4 @@
   line-height: 24px;
 }
 
-.portfolio__site_selection {
-  color: var(--purple);
-}
+

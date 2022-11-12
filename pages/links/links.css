@@ -1,0 +1,13 @@
+.links__text-container {
+  width: 568px;
+  
+}
+
+.links__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--black);
+    margin: 0 0 45px 0;
+}
