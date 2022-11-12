@@ -1,0 +1,48 @@
+:root {
+  --purple: #bf1363;
+  --black: #191923;
+  --white: #fbfef9;
+  --blue: #0e79b2;
+  --gray: #e4e7e2;
+  --red: #d9534d;
+  --violet: #67468b;
+  --orange: #f49c49;
+  --light-gray: rgba(217, 217, 217, 0.1);
+}
+
+.body {
+  font-family: "Source Code Pro", "Arial", "Helvetica";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body_theme_ligth {
+  background-color: var(--white);
+}
+
+.body_theme_dark {
+  background-color: var(--black);
+}
+
+.body_header {
+  margin-bottom: 40px;
+}
+
+.body_footer {
+  margin-bottom: 151px;
+}
+
+.body_type_active {
+  color: var(--purple);
+}
+
+.body_type_active:hover {
+  cursor: default;
+}

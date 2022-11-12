@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>P O M A R K I</title>
+  </head>
+  <body class="body body_theme_ligth">
+    <header class="header body_header">
+      <div class="header__language-bar">
+        <button
+          aria-label="choose russian"
+          class="header__language-selector body_type_active"
+        >
+          RU
+        </button>
+        <button aria-label="choose english" class="header__language-selector">
+          EN
+        </button>
+      </div>
+      <div class="header__themes-container">
+        <img src="images/header__moon.svg" alt="Moon" />
+        <div class="header__themes-button">
+          <div class="header__circle"></div>
+        </div>
+        <img src="images/header__sun.svg" alt="Sun" />
+      </div>
+
+      <h1 class="header__title">pomarki</h1>
+      <img
+        src="images/face__light.jpg"
+        alt="my brave face"
+        class="header__avatar"
+      />
+    </header>
+    <main class="main">
+      <section class="about main_section">
+        <div class="main__title-container">
+          <div class="main__planer"></div>
+          <h1 class="main__title">обо мне</h1>
+        </div>
+        <div class="about__text">
+          <p class="about__paragraph">
+            Меня зовут Денис. Я занимаюсь фронтенд-разработкой. В свободное
+            время читаю научно-популярную литературу, играю с семьёй в настолки,
+            смотрю сериалы, готовлю сливовые пироги по рецепту “The New York
+            Times”, смеюсь над видео о том, как летающая собака ест банан, пишу
+            фантастические рассказы, бегаю по лесу, пытаюсь разобраться в
+            Phyton, словом живу самой обыкновенной жизнью.
+          </p>
+          <p class="about__paragraph">
+            Ещё я очень люблю клеточные автоматы. Если бы их можно было держать
+            в аквариуме, как морских рыбок, актиний и креветок, то мой аквариум
+            вмещал бы тонну воды, а то и две.
+          </p>
+        </div>
+        <button aria-label="close text" class="main__close-button"></button>
+      </section>
+      <section class="portfolio main_section">
+        <div class="main__title-container">
+          <div class="main__planer"></div>
+          <h1 class="main__title">работы</h1>
+        </div>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <div class="portfolio__title-container">
+              <div class="portfolio__title-cube"></div>
+              <h2 class="portfolio__title">статичные сайты</h2>
+            </div>
+            <div class="portfolio__container">
+              <div class="portfolio__site">
+                <a href="" class="portfolio__site_name"></a>
+                <p class="portfolio__site_description"></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="main__close-button"></button>
+      </section>
+      <section class="links main_section">
+        <div class="main__title"></div>
+        <div class="links__main-text"></div>
+        <div class="links__form-container">
+          <form action="" class="links__form">
+            <input type="text" class="links__form_input" />
+            <input type="text" class="links__form_input" />
+            <button class="links__send-button"></button>
+          </form>
+          <div class="links__descriotion-container">
+            <p class="links__paragraph"></p>
+            <p class="links__paragraph"></p>
+          </div>
+        </div>
+      </section>
+      <section class="extra main_section"></section>
+    </main>
+    <footer class="footer body_footer">
+      <p class="footer__copyright"></p>
+      <a href="" class="footer__up"></a>
+      <a href="" class="footer__gh-link"></a>
+    </footer>
+  </body>
+</html>

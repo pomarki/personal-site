@@ -1,0 +1,26 @@
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  max-width: 568px;
+}
+
+.portfolio__item {
+  margin-bottom: 10px;
+}
+
+.portfolio__title-cube {
+  width: 14px;
+  height: 13px;
+  background: no-repeat url("../../images/portfolio__cube.svg");
+  margin-right: 10px;
+}
+
+.portfolio__title {
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
