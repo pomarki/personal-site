@@ -20,6 +20,26 @@
   margin-bottom: 35px;
 }
 
+.main__close-conteiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__close-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 35px;
+  width: 568px;
+}
+.main__close-text {
+  margin: 0 0 0 18px;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 18px;
+  color: var(--red);
+}
+
 .main__title {
   color: var(--purple);
   font-style: normal;
@@ -34,6 +54,7 @@
   height: 13px;
   background: no-repeat url("../../images/main__planer.svg");
   margin-right: 18px;
+  
 }
 
 .main__close-button {
@@ -41,7 +62,7 @@
   height: 13px;
   background: no-repeat url("../../images/main_close-button.svg");
   border: 0;
-  margin-top: 35px;
+  margin-left: 277px;
 }
 
 .main__title:hover {

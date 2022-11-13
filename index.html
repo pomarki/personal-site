@@ -57,7 +57,10 @@
             вмещал бы тонну воды, а то и две.
           </p>
         </div>
-        <button aria-label="close text" class="main__close-button"></button>
+        <div class="main__close-conteiner">
+          <button aria-label="close text" class="main__close-button"></button>
+          <p class="main__close-text">/ закрыть обо мне</p>
+        </div>
       </section>
       <section class="portfolio main_section">
         <div class="main__title-container">
@@ -194,7 +197,10 @@
             </div>
           </li>
         </ul>
-        <button class="main__close-button"></button>
+        <div class="main__close-conteiner">
+          <button aria-label="close text" class="main__close-button"></button>
+          <p class="main__close-text">/ закрыть работы</p>
+        </div>
       </section>
       <section class="links main_section">
         <div class="main__title-container">
@@ -217,14 +223,18 @@
               placeholder="ваше имя"
               required
             />
-            <span class="links__input-error">как к вам обращаться?</span>
+            <span class="links__input-error links__input-error_inactive"
+              >как к вам обращаться?</span
+            >
             <input
               type="text"
               class="links__form-input"
               placeholder="ваш e-mail"
               required
             />
-            <span class="links__input-error">как с вами связаться?</span>
+            <span class="links__input-error links__input-error_inactive"
+              >как с вами связаться?</span
+            >
             <textarea
               class="links__form-input links__form-input_textarea"
               rows="5"
@@ -247,6 +257,10 @@
               увеличивают антропию Вселенной, приближая её тепловую смерть...
             </p>
           </div>
+        </div>
+        <div class="main__close-conteiner">
+          <button aria-label="close text" class="main__close-button"></button>
+          <p class="main__close-text">/ закрыть связаться</p>
         </div>
       </section>
       <section class="extra main_section"></section>
