@@ -15,6 +15,7 @@
 }
 
 .about__paragraph {
+  text-align: justify;
   max-width: 568px;
   font-style: normal;
   font-weight: 250;
