@@ -86,6 +86,7 @@
 }
 
 .links__descriotion-container {
+  margin-top: 7px;
   text-align: justify;
   width: 232px;
   font-style: normal;
@@ -105,4 +106,8 @@
 
 .links__input-error_inactive {
   opacity: 0;
+}
+
+.links__form-input:first-child {
+  margin-top: 12px;
 }

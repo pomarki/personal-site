@@ -1,3 +1,25 @@
+@keyframes circle {
+  0% {
+    transform: translate(0px);
+  }
+
+  25% {
+    transform: translate(-5px);
+  }
+
+  50% {
+    transform: translate(0px);
+  }
+
+  75% {
+    transform: translate(-5px);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -43,7 +65,10 @@
   height: 18px;
   border-radius: 10px;
   margin-right: 4px;
+  /* animation: circle 2s ease-in-out 1s infinite forwards running; */
 }
+
+
 
 .header__title {
   margin: 0;
@@ -67,4 +92,8 @@
 }
 .header__language-selector:hover {
   cursor: pointer;
+}
+
+.header__circle:hover {
+  animation: circle 2s ease-in-out infinite;
 }

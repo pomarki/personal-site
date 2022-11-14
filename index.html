@@ -216,7 +216,11 @@
           </p>
         </div>
         <div class="links__form-container">
-          <form action="" class="links__form">
+          <form
+            action="https://formspree.io/f/mzbwozbl"
+            method="POST"
+            class="links__form"
+          >
             <input
               type="text"
               class="links__form-input"
@@ -227,7 +231,7 @@
               >как к вам обращаться?</span
             >
             <input
-              type="text"
+              type="email"
               class="links__form-input"
               placeholder="ваш e-mail"
               required
@@ -237,11 +241,12 @@
             >
             <textarea
               class="links__form-input links__form-input_textarea"
+              name="message"
               rows="5"
               cols="33"
               placeholder="ваша история"
             ></textarea>
-            <button class="links__send-button">отправить</button>
+            <button type="submit" class="links__send-button">отправить</button>
           </form>
           <div class="links__descriotion-container">
             <p class="links__paragraph">
@@ -268,7 +273,9 @@
     <footer class="footer body_footer">
       <p class="footer__copyright">&COPY; pomarki 2022</p>
       <a href="#" class="footer__up">вверх</a>
-      <a href="https://github.com/pomarki" class="footer__gh-link"><img class="footer__gh-icon" src="/images/Octocat.png" alt=""></a>
+      <a href="https://github.com/pomarki" class="footer__gh-link"
+        ><img class="footer__gh-icon" src="/images/Octocat.png" alt=""
+      /></a>
     </footer>
   </body>
 </html>

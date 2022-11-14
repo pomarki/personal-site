@@ -31,7 +31,6 @@
   align-items: center;
   margin-top: 35px;
   width: 568px;
-  
 }
 .main__close-text {
   margin: 0 0 0 18px;
@@ -44,7 +43,7 @@
   transition: opacity 0.7s linear;
 }
 
-.main__close-conteiner:hover .main__close-text{
+.main__close-conteiner:hover .main__close-text {
   opacity: 1;
   transition: opacity 0.7s linear;
 }
@@ -63,6 +62,7 @@
   height: 13px;
   background: no-repeat url("../../images/main__planer.svg");
   margin-right: 18px;
+  transition: .8s;
 }
 
 .main__close-button {
@@ -71,6 +71,7 @@
   background: no-repeat url("../../images/main_close-button.svg");
   border: 0;
   margin-left: 277px;
+  transition: .8s;
 }
 
 .main__title:hover {
@@ -79,4 +80,10 @@
 
 .main__close-button:hover {
   cursor: pointer;
+  transform: scale(2);
+}
+
+.main__planer:hover {
+  transform: scale(2);
+  transition: .8s;
 }
