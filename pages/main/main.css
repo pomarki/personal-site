@@ -31,6 +31,7 @@
   align-items: center;
   margin-top: 35px;
   width: 568px;
+  
 }
 .main__close-text {
   margin: 0 0 0 18px;
@@ -38,6 +39,14 @@
   font-weight: 250;
   font-size: 18px;
   color: var(--red);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.7s linear;
+}
+
+.main__close-conteiner:hover .main__close-text{
+  opacity: 1;
+  transition: opacity 0.7s linear;
 }
 
 .main__title {
@@ -54,7 +63,6 @@
   height: 13px;
   background: no-repeat url("../../images/main__planer.svg");
   margin-right: 18px;
-  
 }
 
 .main__close-button {
