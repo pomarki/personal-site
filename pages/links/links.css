@@ -1,5 +1,10 @@
 .links__text-container {
   width: 568px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 45px;
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 35px;
 }
 
 .links__link {
@@ -8,7 +13,7 @@
   font-size: 22px;
   line-height: 24px;
   color: var(--black);
-  margin: 0 0 45px 0;
+  margin: 0;
 }
 
 .links__form-container {
@@ -68,17 +73,21 @@
   border-radius: 10px;
   background-color: var(--blue);
   color: var(--white);
-  font-weight: 900;
+  font-weight: 200;
   font-size: 22px;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
+  transition: background-color 0.7s linear;
 }
 
 .links__send-button:hover {
   cursor: pointer;
+  background-color: var(--violet);
+  transition: background-color 0.7s linear;
 }
 
 .links__send-button:focus {
