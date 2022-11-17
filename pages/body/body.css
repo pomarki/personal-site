@@ -10,6 +10,10 @@
   --light-gray: rgba(217, 217, 217, 0.1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: "Source Code Pro", "Arial", "Helvetica";
   -moz-osx-font-smoothing: grayscale;
@@ -22,12 +26,15 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  color: var(--black);
   background-color: var(--white);
+  transition: background-color 700ms linear;
 }
-
 
 .body_theme_dark {
   background-color: var(--black);
+  color: var(--white);
+  transition: background-color 700ms linear;
 }
 
 .body_header {
@@ -52,4 +59,9 @@
 
 .body__link {
   text-decoration: none;
+}
+
+.body__link:hover {
+  color: var(--red);
+  transition: color 0.7s linear;
 }

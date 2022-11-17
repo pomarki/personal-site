@@ -1,5 +1,6 @@
 .portfolio {
   width: 100%;
+  
 }
 
 .portfolio__list {
@@ -32,7 +33,7 @@
 }
 
 .portfolio__title {
-  color: var(--black);
+  /* color: var(--black); */
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -76,12 +77,16 @@
 }
 
 .portfolio__site_name {
-  text-decoration: none;
   color: var(--black);
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 24px;
+  transition: color 0.7s linear;
+}
+
+.portfolio__site_name_theme_dark {
+  color: var(--white);
 }
 
 .portfolio__site_description {

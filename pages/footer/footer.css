@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  color: var(--black);
 }
 
 .footer__copyright {
@@ -26,6 +27,7 @@
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
+  transition: color 0.7s linear;
 }
 
 .footer__gh-icon {
