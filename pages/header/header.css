@@ -65,10 +65,7 @@
   height: 18px;
   border-radius: 10px;
   margin-right: 4px;
-  /* animation: circle 2s ease-in-out 1s infinite forwards running; */
 }
-
-
 
 .header__title {
   margin: 0;
@@ -90,6 +87,7 @@
 .header__language-selector:first-child {
   margin-right: 23px;
 }
+
 .header__language-selector:hover {
   cursor: pointer;
 }

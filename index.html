@@ -9,7 +9,7 @@
     <title>P O M A R K I</title>
   </head>
   <body class="body body_theme_ligth">
-    <header class="header body_header">
+    <header id="header" class="header body_header">
       <div class="header__language-bar">
         <button
           aria-label="choose russian"
@@ -209,9 +209,10 @@
         </div>
         <div class="links__text-container">
           <p class="links__link">telegram:</p>
-          <p class="links__link">
-            <span class="body_selection">@pomarki</span>
-          </p>
+          <a class="links__link body__link" href="https://t.me/pomarki"
+            ><span class="body_selection">@pomarki</span></a
+          >
+
           <p class="links__link">e-mail:</p>
           <p class="links__link">
             <span class="body_selection">pomarki@yandex.ru</span>
@@ -274,9 +275,12 @@
     </main>
     <footer class="footer body_footer">
       <p class="footer__copyright">&COPY; pomarki 2022</p>
-      <a href="#" class="footer__up">вверх</a>
+      <a href="#header" class="footer__up">вверх</a>
       <a href="https://github.com/pomarki" class="footer__gh-link"
-        ><img class="footer__gh-icon" src="/images/Octocat.png" alt=""
+        ><img
+          class="footer__gh-icon"
+          src="images/Octocat.png"
+          alt="профиль в github"
       /></a>
     </footer>
   </body>

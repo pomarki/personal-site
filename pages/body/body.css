@@ -51,3 +51,7 @@
 .body_type_active:hover {
   cursor: default;
 }
+
+.body__link {
+  text-decoration: none;
+}
