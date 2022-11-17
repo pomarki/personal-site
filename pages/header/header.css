@@ -59,6 +59,10 @@
   border-radius: 13px;
 }
 
+.header__themes-button_dark {
+  transform: scale(-1, 1);
+}
+
 .header__circle {
   background-color: var(--white);
   width: 18px;
@@ -94,4 +98,27 @@
 
 .header__circle:hover {
   animation: circle 2s ease-in-out infinite;
+}
+
+.header__themes-indicator {
+  width: 23px;
+  height: 23px;
+  
+}
+
+.header__themes-indicator_moon_light {
+  width: 15px;
+  background: no-repeat url("../../images/header__moon.svg");
+}
+
+.header__themes-indicator_sun_light {
+  background: no-repeat url("../../images/header__sun.svg");
+}
+
+.header__themes-indicator_moon_dark {
+  background: no-repeat url("../../images/header__moon_dark.svg");
+}
+
+.header__themes-indicator_sun_dark {
+  background: no-repeat url("../../images/header__sun_dark.svg");
 }

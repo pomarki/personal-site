@@ -22,11 +22,9 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.body_theme_ligth {
   background-color: var(--white);
 }
+
 
 .body_theme_dark {
   background-color: var(--black);

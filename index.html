@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
+    <script type="module" src="scripts/index.js" defer></script>
     <title>P O M A R K I</title>
   </head>
-  <body class="body body_theme_ligth">
+  <body class="body">
     <header id="header" class="header body_header">
       <div class="header__language-bar">
         <button
@@ -22,11 +23,11 @@
         </button>
       </div>
       <div class="header__themes-container">
-        <img src="images/header__moon.svg" alt="Moon" />
-        <div class="header__themes-button">
+        <div class="header__themes-indicator header__themes-indicator_moon_light"></div>
+        <div class="header__themes-button" id="themes-button">
           <div class="header__circle"></div>
         </div>
-        <img src="images/header__sun.svg" alt="Sun" />
+        <div class="header__themes-indicator header__themes-indicator_sun_light"></div>
       </div>
 
       <h1 class="header__title">pomarki</h1>
