@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .body {
@@ -25,7 +26,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
   color: var(--black);
   background-color: var(--white);
   transition: background-color 700ms linear;
@@ -42,7 +43,8 @@ html {
 }
 
 .body_footer {
-  margin-top: 151px;
+  /* margin-top: 50px; */
+  display: none;
 }
 
 .body_type_active {
@@ -51,6 +53,7 @@ html {
 
 .body_selection {
   color: var(--purple);
+  font-weight: 400;
 }
 
 .body_type_active:hover {
@@ -63,5 +66,17 @@ html {
 
 .body__link:hover {
   color: var(--red);
+  cursor: pointer;
   transition: color 0.7s linear;
+}
+
+.body__wrapper {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body__wrapper_type_visible {
+  display: flex;
 }

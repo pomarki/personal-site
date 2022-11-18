@@ -7,6 +7,8 @@ import {
   title,
   portfolioLinks,
   avatar,
+  menuTitles,
+  wrapperAbout,
 } from "./data.js";
 
 let mainTheme = true;
@@ -24,9 +26,22 @@ const themesToggle = () => {
   portfolioLinks.forEach((el) => {
     el.classList.toggle("portfolio__site_name_theme_dark");
   });
+  menuTitles.forEach((el) => {
+    el.classList.toggle("main__title_theme_dark");
+  });
+
   mainTheme
     ? (avatar.src = "images/face__light.jpg")
     : (avatar.src = "images/face__dark.jpg");
+};
+
+menuTitles.forEach((el) => {
+  el.addEventListener('click', () => console.log(el.id))
+})
+
+
+const openSection = (section) => {
+  section.toggle("body__wrapper_type_visible");
 };
 
 themesButton.addEventListener("click", themesToggle);
