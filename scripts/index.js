@@ -15,10 +15,11 @@ import { menuTitles } from "./titles.js";
 import { Link } from "../components/Link.js";
 const mainScreen = document.getElementById("main-screen");
 let screen = mainScreen.getContext("2d");
+screen.globalAlpha = 0.5;
 mainScreen.width = 1280;
 mainScreen.height = 222;
 
-let mainTheme = false;
+let mainTheme = true;
 const openSection = (id) => {
   let section = document.getElementById(id);
   section.classList.toggle("body__wrapper_type_visible");
@@ -44,20 +45,21 @@ const rndArr = () => {
     }
     res.push(sub);
   }
-  return res
+  return res;
 };
 
 const renderMainScreen = (arr) => {
   let bgColor;
-  mainTheme ? bgColor = "#fbfef9" : bgColor = "#191923"
+  mainTheme ? (bgColor = "#fbfef9") : (bgColor = "#191923");
 
   for (let x = 0; x <= arr.length - 1; x++) {
     for (let y = 0; y <= arr[x].length - 1; y++) {
-       arr[x][y] === 0
-        ? screen.fillStyle = bgColor
-        : screen.fillStyle = "#d9534d"
-
+      if (arr[x][y] === 0) {
+        screen.clearRect(12 * x, 12 * y, 10, 10);
+      } else {
+        screen.fillStyle = "#d9534d";
         screen.fillRect(12 * x, 12 * y, 10, 10);
+      }
     }
   }
 };
