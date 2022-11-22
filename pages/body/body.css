@@ -15,6 +15,15 @@ html {
   height: 100%;
 }
 
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .body {
   font-family: "Source Code Pro", "Arial", "Helvetica";
   -moz-osx-font-smoothing: grayscale;
@@ -75,8 +84,10 @@ html {
   width: 100%;
   flex-direction: column;
   align-items: center;
+  animation: showBlock 2s linear forwards;
 }
 
 .body__wrapper_type_visible {
   display: flex;
+  animation: showBlock 2s linear forwards;
 }

@@ -63,7 +63,6 @@
   color: var(--white);
 }
 
-
 .main__planer {
   opacity: 0;
   width: 14px;
@@ -73,7 +72,6 @@
   transition: 0.8s;
   align-self: center;
 }
-
 
 .main__close-button {
   width: 14px;

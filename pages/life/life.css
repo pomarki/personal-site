@@ -1,0 +1,10 @@
+.life {
+    width: 100%;
+}
+
+.life__screen {
+  width: 100%;
+  height: 222px;
+  background-color: var(--light-gray);
+  margin: 0 0 52px 0;
+}
