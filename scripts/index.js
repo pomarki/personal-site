@@ -8,16 +8,17 @@ import {
   portfolioLinks,
   avatar,
   wrapperAbout,
+  colors,
 } from "./data.js";
 import { themesToggle } from "./themesToggle.js";
 import { menuTitles } from "./titles.js";
 import { Link } from "../components/Link.js";
 const mainScreen = document.getElementById("main-screen");
 let screen = mainScreen.getContext("2d");
-mainScreen.width = window.innerWidth;
+mainScreen.width = 1280;
 mainScreen.height = 222;
 
-let mainTheme = true;
+let mainTheme = false;
 const openSection = (id) => {
   let section = document.getElementById(id);
   section.classList.toggle("body__wrapper_type_visible");
@@ -30,11 +31,44 @@ menuTitles.forEach((el) => {
   targetSection.prepend(linkElement);
 });
 
-screen.fillStyle = "#70C1B3";
-screen.fillRect(10, 10, 10, 10);
-screen.fillRect(10, 23, 10, 10);
+const rndColor = (num) => {
+  return Math.floor(Math.random() * num) || 0;
+};
 
+const rndArr = () => {
+  let res = [];
+  for (let x = 0; x <= 105; x++) {
+    let sub = [];
+    for (let y = 0; y <= 17; y++) {
+      sub.push(Math.floor(Math.random() * 2));
+    }
+    res.push(sub);
+  }
+  return res
+};
 
+const renderMainScreen = (arr) => {
+  let bgColor;
+  mainTheme ? bgColor = "#fbfef9" : bgColor = "#191923"
 
+  for (let x = 0; x <= arr.length - 1; x++) {
+    for (let y = 0; y <= arr[x].length - 1; y++) {
+       arr[x][y] === 0
+        ? screen.fillStyle = bgColor
+        : screen.fillStyle = "#d9534d"
+
+        screen.fillRect(12 * x, 12 * y, 10, 10);
+    }
+  }
+};
+
+// слушатель на изменение окна
+/* window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+}); */
+
+//console.log(rndArr())
+
+renderMainScreen(rndArr());
 
 themesButton.addEventListener("click", () => themesToggle(mainTheme));

@@ -5,3 +5,4 @@ const menuTitles = [
 ];
 
 export { menuTitles };
+

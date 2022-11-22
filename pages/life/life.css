@@ -1,10 +1,24 @@
 .life {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .life__screen {
-  width: 100%;
+  width: 1280px;
   height: 222px;
-  background-color: var(--light-gray);
+  background-color: var(--white);
   margin: 0 0 52px 0;
+  /*  opacity: .1; */
+  transition: opacity 2s linear;
+}
+
+.life__screen:hover {
+  /*  opacity: 1; */
+  transition: opacity 2s linear;
+}
+
+.life__screen_theme_dark {
+  background-color: var(--black);
 }

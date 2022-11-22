@@ -13,7 +13,20 @@ const portfolioLinks = Array.from(
 );
 const menuTitles = Array.from(document.querySelectorAll(".main__title"));
 const avatar = document.querySelector(".header__avatar");
-const wrapperAbout = document.getElementById("about")
+const wrapperAbout = document.getElementById("about");
+const mainScreenContainer = document.querySelector(".life__screen");
+const colors = ["#fbfef9", "#bf1363"];
+
+/* const colors = [
+  "#bf1363",
+  "#0e79b2",
+  "#fbfef9",
+  "#d9534d",
+  "#67468b",
+  "#f49c49",
+];
+ */
+
 
 
 export {
@@ -27,4 +40,6 @@ export {
   avatar,
   menuTitles,
   wrapperAbout,
+  colors,
+  mainScreenContainer,
 };
