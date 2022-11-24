@@ -7,12 +7,13 @@ import {
   title,
   portfolioLinks,
   avatar,
-  menuTitles,
+  /* menuTitles, */
   mainScreenContainer,
 } from "./data.js";
 
 const themesToggle = (theme) => {
   theme = !theme;
+  const menuTitles = Array.from(document.querySelectorAll(".main__title"));
   pageBody.classList.toggle("body_theme_dark");
   themesButton.classList.toggle("header__themes-button_dark");
   sunBlock.classList.toggle("header__themes-indicator_sun_dark");

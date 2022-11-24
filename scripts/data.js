@@ -11,7 +11,7 @@ const title = document.querySelector(".header__title");
 const portfolioLinks = Array.from(
   document.querySelectorAll(".portfolio__site_name")
 );
-const menuTitles = Array.from(document.querySelectorAll(".main__title"));
+/* const menuTitles = Array.from(document.querySelectorAll(".main__title-container")); */
 const avatar = document.querySelector(".header__avatar");
 const wrapperAbout = document.getElementById("about");
 const mainScreenContainer = document.querySelector(".life__screen");
@@ -38,7 +38,7 @@ export {
   title,
   portfolioLinks,
   avatar,
-  menuTitles,
+  /* menuTitles, */
   wrapperAbout,
   colors,
   mainScreenContainer,
