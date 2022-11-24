@@ -74,6 +74,10 @@
   align-self: center;
 }
 
+.main__planer_type_active {
+  opacity: 1;
+}
+
 .main__close-button {
   width: 14px;
   height: 13px;

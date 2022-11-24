@@ -20,6 +20,7 @@ mainScreen.width = 1280;
 mainScreen.height = 222;
 
 let mainTheme = true;
+
 const openSection = (id) => {
   let section = document.getElementById(id);
   section.classList.toggle("body__wrapper_type_visible");

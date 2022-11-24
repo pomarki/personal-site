@@ -120,19 +120,19 @@
 
 .header__themes-indicator_moon_light {
   width: 15px;
-  background: no-repeat url("../../images/header__moon.svg");
+  /* background: no-repeat url("../../images/header__moon.svg"); */
 }
 
 .header__themes-indicator_sun_light {
-  background: no-repeat url("../../images/header__sun.svg");
+ /*  background: no-repeat url("../../images/header__sun.svg"); */
 }
 
 .header__themes-indicator_moon_dark {
-  background: no-repeat url("../../images/header__moon_dark.svg");
+  /* background: no-repeat url("../../images/header__moon_dark.svg"); */
 }
 
 .header__themes-indicator_sun_dark {
-  background: no-repeat url("../../images/header__sun_dark.svg");
+ /*  background: no-repeat url("../../images/header__sun_dark.svg"); */
 }
 
 .header__title:hover {
