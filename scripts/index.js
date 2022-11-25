@@ -11,8 +11,9 @@ import {
   colors,
 } from "./data.js";
 import { themesToggle } from "./themesToggle.js";
-import { menuTitles } from "./titles.js";
+import { menuTitles, documentTitles } from "./titles.js";
 import { Link } from "../components/Link.js";
+import { randomizerArr } from "./utils.js";
 const mainScreen = document.getElementById("main-screen");
 let screen = mainScreen.getContext("2d");
 screen.globalAlpha = 0.5;
@@ -40,8 +41,10 @@ const rndColor = (num) => {
 const rndArr = () => {
   let res = [];
   for (let x = 0; x <= 105; x++) {
+    //105
     let sub = [];
     for (let y = 0; y <= 17; y++) {
+      //17
       sub.push(Math.floor(Math.random() * 2));
     }
     res.push(sub);
@@ -50,19 +53,24 @@ const rndArr = () => {
 };
 
 const renderMainScreen = (arr) => {
-  let bgColor;
-  mainTheme ? (bgColor = "#fbfef9") : (bgColor = "#191923");
+  
+  let initialArr = randomizerArr(arr[0].length - 1, arr.length - 1);
 
-  for (let x = 0; x <= arr.length - 1; x++) {
-    for (let y = 0; y <= arr[x].length - 1; y++) {
-      if (arr[x][y] === 0) {
-        screen.clearRect(12 * x, 12 * y, 10, 10);
-      } else {
-        screen.fillStyle = "#d9534d";
-        screen.fillRect(12 * x, 12 * y, 10, 10);
-      }
+  const renderElement = (a, b) => {
+    if (arr[a][b] === 0) {
+      screen.clearRect(12 * a, 12 * b, 10, 10);
+    } else {
+      screen.fillStyle = "#d9534d";
+      screen.fillRect(12 * a, 12 * b, 10, 10);
     }
-  }
+  };
+
+  initialArr.forEach((adress) => {
+    let cut = adress.indexOf("-");
+    let y = adress.slice(0, cut);
+    let x = adress.slice(cut + 1, adress.length);
+    setTimeout(() => {renderElement(x, y)}, 1000)
+  });
 };
 
 // слушатель на изменение окна
@@ -70,8 +78,11 @@ const renderMainScreen = (arr) => {
   console.log(window.innerWidth);
 }); */
 
-//console.log(rndArr())
 
 renderMainScreen(rndArr());
 
 themesButton.addEventListener("click", () => themesToggle(mainTheme));
+
+document.title = documentTitles.eng[0]; // добавить случайный выбор и переключатель по кнопке ru / en
+
+
