@@ -15,6 +15,7 @@ const portfolioLinks = Array.from(
 const avatar = document.querySelector(".header__avatar");
 const wrapperAbout = document.getElementById("about");
 const mainScreenContainer = document.querySelector(".life__screen");
+const mainBanner = document.querySelector(".life__banner")
 const colors = ["#fbfef9", "#bf1363"];
 
 /* const colors = [
@@ -42,4 +43,5 @@ export {
   wrapperAbout,
   colors,
   mainScreenContainer,
+  mainBanner,
 };

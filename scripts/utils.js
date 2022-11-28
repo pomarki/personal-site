@@ -1,3 +1,10 @@
+const mainScreen = document.getElementById("main-screen");
+let screen = mainScreen.getContext("2d");
+screen.globalAlpha = 0.5;
+mainScreen.width = 1280;
+mainScreen.height = 222;
+
+
 const randomizerArr = (w, h) => {
   let res = [];
   let subRes = [];
@@ -15,40 +22,44 @@ const randomizerArr = (w, h) => {
   return res;
 };
 
-export { randomizerArr };
+const rndColor = (num) => {
+  return Math.floor(Math.random() * num) || 0;
+};
 
-[
-  [1, 0, 1, 1],
-  [1, 1, 0, 0],
-  [1, 1, 0, 1],
-  [1, 1, 0, 0],
-  [1, 1, 1, 1],
-  [1, 0, 0, 1],
-];
+const rndArr = () => {
+  let res = [];
+  for (let x = 0; x <= 105; x++) {
+    //105
+    let sub = [];
+    for (let y = 0; y <= 17; y++) {
+      //17
+      sub.push(Math.floor(Math.random() * 2));
+    }
+    res.push(sub);
+  }
+  return res;
+};
 
-[
-    "0-1",
-    "1-5",
-    "3-4",
-    "3-0",
-    "0-3",
-    "2-5",
-    "2-3",
-    "1-3",
-    "1-2",
-    "0-4",
-    "1-0",
-    "3-2",
-    "0-0",
-    "1-1",
-    "2-0",
-    "0-2",
-    "0-5",
-    "1-4",
-    "2-1",
-    "3-5",
-    "3-1",
-    "2-2",
-    "2-4",
-    "3-3"
-]
+const renderMainScreen = (arr) => {
+  
+  let initialArr = randomizerArr(arr[0].length - 1, arr.length - 1);
+
+  const renderElement = (a, b) => {
+    if (arr[a][b] === 0) {
+      screen.clearRect(12 * a, 12 * b, 10, 10);
+    } else {
+      screen.fillStyle = "#d9534d";
+      screen.fillRect(12 * a, 12 * b, 10, 10);
+    }
+  };
+
+  initialArr.forEach((adress) => {
+    let cut = adress.indexOf("-");
+    let y = adress.slice(0, cut);
+    let x = adress.slice(cut + 1, adress.length);
+    setTimeout(() => {renderElement(x, y)}, 500)
+  });
+};
+
+export { rndArr,  renderMainScreen};
+
